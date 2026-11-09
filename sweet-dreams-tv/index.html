@@ -4,16 +4,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sweet Dreams TV para Android TV · quirogaj</title>
-  <meta name="description" content="Una aplicación concebida para acompañar el descanso con escenas espaciales y ambientes nocturnos de baja luminosidad.">
+  <meta name="description" content="Ambientes nocturnos para Android TV con escenas de baja luminosidad, sonido opcional y temporizador. Descárgalos para reproducirlos sin conexión.">
   <link rel="canonical" href="https://quirogajqa.github.io/sweet-dreams-tv/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="quirogaj">
   <meta property="og:title" content="Sweet Dreams TV para Android TV · quirogaj">
-  <meta property="og:description" content="Una aplicación concebida para acompañar el descanso con escenas espaciales y ambientes nocturnos de baja luminosidad.">
+  <meta property="og:description" content="Ambientes nocturnos para Android TV con escenas de baja luminosidad, sonido opcional y temporizador. Descárgalos para reproducirlos sin conexión.">
   <meta property="og:url" content="https://quirogajqa.github.io/sweet-dreams-tv/">
+  <meta property="og:image" content="https://quirogajqa.github.io/assets/images/sweet-dreams-tv-pantalla-principal.webp">
+  <meta property="og:image:alt" content="Pantalla principal de Sweet Dreams TV con su catálogo de ambientes">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="720">
   <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg">
   <link rel="stylesheet" href="../css/styles.css">
-  <script defer src="../js/main.js"></script>
+  <style>
+    .sweet-dreams a { overflow-wrap: anywhere; }
+    .sweet-dreams > section { margin-top: 2.5rem; }
+    .sweet-dreams .lead { max-width: 59ch; font-size: 1.15rem; }
+    .sweet-dreams .gallery img { background: var(--panel); }
+  </style>
 </head>
 <body>
   <a class="skip" href="#contenido">Saltar al contenido</a>
@@ -30,33 +39,59 @@
     </div>
   </header>
   <main id="contenido" tabindex="-1">
-    <article class="wrap section detail">
-      <p><a href="../#aplicaciones">Volver a aplicaciones</a></p>
-      <div class="card-title"><img class="app-icon" src="../assets/icons/sweet-dreams-tv.svg" alt="" width="48" height="48"><p class="tag">Android TV · Icono provisional</p></div>
+    <article class="wrap section sweet-dreams">
+      <div class="card-title">
+        <img class="app-icon" src="../assets/icons/sweet-dreams-tv-app.webp" alt="" width="48" height="48">
+        <p class="tag">Android TV · quirogaj</p>
+      </div>
       <h1>Sweet Dreams TV</h1>
-      <p>Una aplicación concebida para acompañar el descanso con escenas espaciales y ambientes nocturnos de baja luminosidad.</p>
+      <p class="lead">Convierte tu televisor en un paisaje nocturno. Elige un bosque, un cielo estrellado u otro ambiente de baja luminosidad para acompañar el descanso.</p>
       <section>
         <h2>Características</h2>
-      <p>Funciones disponibles pendientes de confirmación.</p>
-      <h3>Funciones previstas</h3>
-      <ul>
-        <li>Colecciones de imágenes relajantes.</li>
-        <li>Ambientes nocturnos y escenas espaciales.</li>
-        <li>Experiencia visual diseñada para emitir poca luz.</li>
-        <li>Temporizador de apagado o suspensión, sujeto a la compatibilidad del dispositivo.</li>
-      </ul>
+        <div class="grid">
+          <div class="card"><div class="card-body">
+            <h3>Ambientes descargables</h3>
+            <p>Explora el catálogo con el mando y descarga ambientes gratuitos o premium. Una vez descargados y, si corresponde, verificada la compra, puedes reproducirlos sin conexión.</p>
+          </div></div>
+          <div class="card"><div class="card-body">
+            <h3>Sesiones a tu ritmo</h3>
+            <p>Ajusta la duración, el intervalo entre imágenes y las transiciones. Puedes activar o silenciar el sonido en los ambientes que lo incluyen.</p>
+          </div></div>
+          <div class="card"><div class="card-body">
+            <h3>Suspensión opcional</h3>
+            <p>En dispositivos compatibles, la app puede solicitar el bloqueo de pantalla al finalizar el temporizador si habilitas el servicio de accesibilidad. El televisor puede permanecer encendido.</p>
+          </div></div>
+        </div>
       </section>
       <section>
         <h2>Galería</h2>
-        <figure>
-          <img src="../assets/images/sweet-dreams-tv.svg" width="720" height="360" loading="lazy" decoding="async" alt="Un planeta con anillos sobre un cielo estrellado, ilustrado dentro de un televisor.">
-          <figcaption>Ilustración provisional · Capturas oficiales pendientes</figcaption>
-        </figure>
+        <div class="grid gallery">
+          <figure class="card">
+            <img src="../assets/images/sweet-dreams-tv-pantalla-principal.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Menú principal con tarjetas para elegir un ambiente y acceder a la configuración.">
+            <figcaption>Catálogo de ambientes</figcaption>
+          </figure>
+          <figure class="card">
+            <img src="../assets/images/sweet-dreams-tv-bosque-nocturno.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Escena oscura de un bosque durante la reproducción.">
+            <figcaption>Bosque Nocturno</figcaption>
+          </figure>
+          <figure class="card">
+            <img src="../assets/images/sweet-dreams-tv-luna-y-estrellas.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Escena nocturna con la luna y un cielo estrellado durante la reproducción.">
+            <figcaption>Luna y Estrellas</figcaption>
+          </figure>
+        </div>
       </section>
       <section>
         <h2>Disponibilidad</h2>
-        <p>Ficha de Google Play pendiente de confirmar.</p>
-        <a href="privacidad/">Política de privacidad de Sweet Dreams TV (borrador)</a>
+        <div class="notice">
+          <p>Para televisores y cajas con Android TV compatibles. La aplicación aún no está publicada en Google Play. La edición prevista incluye ambientes premium mediante compras únicas.</p>
+        </div>
+      </section>
+      <section>
+        <h2>Información legal</h2>
+        <ul>
+          <li><a href="./privacidad/">Política de privacidad (borrador)</a></li>
+          <li><a href="./terminos/">Términos de uso (borrador)</a></li>
+        </ul>
       </section>
     </article>
   </main>
@@ -67,10 +102,11 @@
         <li><a href="../photo-saver/">Photo Saver</a></li>
         <li><a href="../photo-saver/privacidad/">Privacidad de Photo Saver</a></li>
         <li><a href="../sweet-dreams-tv/">Sweet Dreams TV</a></li>
-        <li><a href="../sweet-dreams-tv/privacidad/">Privacidad de Sweet Dreams TV</a></li>
+        <li><a href="../sweet-dreams-tv/privacidad/">Privacidad de Sweet Dreams TV (borrador)</a></li>
+        <li><a href="../sweet-dreams-tv/terminos/">Términos de Sweet Dreams TV (borrador)</a></li>
         <li><a href="../#contacto">Contacto</a></li>
       </ul>
-      <p>© <span data-year>2026</span> quirogaj</p>
+      <p>© 2026 quirogaj</p>
     </div>
   </footer>
 </body>
