@@ -1,125 +1,517 @@
-<!doctype html>
-<html lang="es">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>QuirogaJ · Aplicaciones para Android y Android TV</title>
-  <meta name="description" content="Conoce Parejas Locas, Photo Saver TV y Sweet Dreams TV, aplicaciones para Android y Android TV de QuirogaJ.">
-  <link rel="canonical" href="https://quirogajqa.github.io/">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="QuirogaJ">
-  <meta property="og:title" content="QuirogaJ · Aplicaciones para Android y Android TV">
-  <meta property="og:description" content="Conoce Parejas Locas, Photo Saver TV y Sweet Dreams TV, aplicaciones para Android y Android TV de QuirogaJ.">
-  <meta property="og:url" content="https://quirogajqa.github.io/">
-  <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon.svg">
-  <link rel="stylesheet" href="./css/styles.css">
-  <script defer src="./js/main.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>pocketvibe - Play three.js Games on Your Retro Handheld</title>
+<meta name="description" content="pocketvibe is a launcher, game store and starter kit that lets you play three.js games on ROCKNIX and Android retro handhelds, and make your own games with AI.">
+<meta name="keywords" content="ai-agents, anbernic, android, claude-code, game-development, game-launcher, game-store, h700, handheld, javascript, open-source, retro-gaming, retro-handheld, rocknix, threejs, vibe-coding, webgl, wpe-webkit, pocketvibe">
+<meta name="author" content="bytheroberto">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://github.com/bytheroberto/pocketvibe">
+<meta property="og:type" content="website">
+<meta property="og:title" content="pocketvibe - Play three.js Games on Your Retro Handheld">
+<meta property="og:description" content="A launcher, game store and starter kit for ROCKNIX and Android handhelds. Play web games, discover new ones, and build your own with AI.">
+<meta property="og:url" content="https://github.com/bytheroberto/pocketvibe">
+<meta property="og:site_name" content="pocketvibe">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="pocketvibe - Play three.js Games on Your Retro Handheld">
+<meta name="twitter:description" content="A launcher, game store and starter kit for ROCKNIX and Android handhelds. Play web games, discover new ones, and build your own with AI.">
+<meta name="theme-color" content="#7c3aed">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "pocketvibe",
+  "applicationCategory": "GameApplication",
+  "operatingSystem": "ROCKNIX, Android",
+  "description": "Play three.js games on your retro handheld, and make your own with AI. A launcher, game store and starter kit for ROCKNIX and Android handhelds.",
+  "url": "https://github.com/bytheroberto/pocketvibe",
+  "downloadUrl": "https://github.com/bytheroberto/pocketvibe/releases",
+  "author": {
+    "@type": "Person",
+    "name": "bytheroberto"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
 </head>
-<body>
-  <a class="skip" href="#contenido">Saltar al contenido</a>
-  <header class="site-header">
-    <div class="wrap bar">
-      <a class="brand" href="./">QuirogaJ<span aria-hidden="true">.</span></a>
-      <nav aria-label="Navegación principal">
-        <ul>
-          <li><a href="./" aria-current="page">Inicio</a></li>
-          <li><a href="./#aplicaciones">Aplicaciones</a></li>
-          <li><a href="./#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
+<body style="margin:0; padding:0; background-color:#f4f5f9; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color:#1f2333; line-height:1.7; -webkit-font-smoothing:antialiased;">
+
+<div style="max-width:860px; margin:0 auto; padding:40px 22px 70px 22px;">
+
+  <header style="text-align:center; padding:34px 24px 30px 24px; background:linear-gradient(150deg, #ffffff 0%, #eef1fb 100%); border-radius:20px; box-shadow:0 10px 30px rgba(31,35,51,0.09); border:1px solid #e2e6f2;">
+
+    <h1 style="font-size:2.15rem; line-height:1.25; margin:0 0 14px 0; font-weight:800; letter-spacing:-0.5px; color:#14172a;">🎮 pocketvibe - Play Retro Games Made With AI</h1>
+
+    <p style="font-size:1.08rem; margin:0 auto 26px auto; max-width:620px; color:#4a5068;">Play three.js games on your retro handheld, and make your own with AI. A launcher, game store and starter kit for ROCKNIX and Android handhelds.</p>
+
+    <a href="https://github.com/bytheroberto/pocketvibe/releases" style="display:inline-block; padding:17px 40px; font-size:1.12rem; font-weight:700; color:#ffffff; text-decoration:none; background:linear-gradient(90deg, #7c3aed 0%, #ec4899 100%); border-radius:14px; box-shadow:0 8px 20px rgba(124,58,237,0.35); letter-spacing:0.2px;">⬇️ Download pocketvibe</a>
+
+    <p style="margin:18px 0 0 0; font-size:0.88rem; color:#7b8199;">Free and open source. Windows setup guide included below.</p>
+
   </header>
-  <main id="contenido" tabindex="-1">
-    <section class="hero">
-      <div class="wrap">
-        <p class="eyebrow">Desarrollo independiente · Android y Android TV</p>
-        <h1>Aplicaciones para jugar, aprender y relajarte</h1>
-        <p>Soy QuirogaJ. Desarrollo juegos para Android y aplicaciones para Android TV, como un salvapantallas para tus fotos y ambientes visuales para acompañar el descanso.</p>
-        <a class="button" href="#aplicaciones">Explorar aplicaciones</a>
-      </div>
-    </section>
-    <section class="wrap section" id="aplicaciones">
-      <h2>Aplicaciones</h2>
-      <div class="grid">
-        <article class="card">
-          <figure>
-            <img src="assets/images/photo-saver-inicio.png" width="1920" height="1080" loading="lazy" decoding="async" alt="Menú principal de Photo Saver TV.">
-            <figcaption>Menú principal en Android TV</figcaption>
-          </figure>
-          <div class="card-body">
-            <div class="card-title">
-              <img class="app-icon" src="assets/icons/photo-saver-app.png" alt="" width="48" height="48">
-              <div>
-                <p class="tag">Android TV</p>
-                <h3>Photo Saver TV</h3>
-              </div>
-            </div>
-            <p>Salvapantallas para mostrar tus fotografías personales en un televisor con Android TV.</p>
-            <p>Disponible en prueba cerrada de Google Play para cuentas autorizadas.</p>
-            <div class="actions"><a class="button" href="photo-saver/" aria-label="Conocer más sobre Photo Saver TV">Conocer más</a></div>
-          </div>
-        </article>
-        <article class="card">
-          <figure>
-            <img src="assets/images/sweet-dreams-tv-pantalla-principal.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Menú principal con tarjetas para elegir un ambiente.">
-            <figcaption>Catálogo de ambientes</figcaption>
-          </figure>
-          <div class="card-body">
-            <div class="card-title">
-              <img class="app-icon" src="assets/icons/sweet-dreams-tv-app.webp" alt="" width="48" height="48">
-              <div>
-                <p class="tag">Android TV</p>
-                <h3>Sweet Dreams TV</h3>
-              </div>
-            </div>
-            <p>Ambientes nocturnos descargables con escenas de baja luminosidad, sonido opcional y temporizador.</p>
-            <p>La aplicación aún no está publicada en Google Play.</p>
-            <div class="actions"><a class="button" href="sweet-dreams-tv/" aria-label="Conocer más sobre Sweet Dreams TV">Conocer más</a></div>
-          </div>
-        </article>
-        <article class="card">
-          <figure>
-            <img src="assets/images/parejas-locas-ronda.svg" width="720" height="360" loading="lazy" decoding="async" alt="Dos columnas de tarjetas. Gato y cat aparecen resaltadas como pareja.">
-            <figcaption>Ilustración provisional de una ronda de vocabulario</figcaption>
-          </figure>
-          <div class="card-body">
-            <div class="card-title">
-              <img class="app-icon" src="assets/icons/parejas-locas.webp" alt="" width="48" height="48">
-              <div>
-                <p class="tag">Android</p>
-                <h3>Parejas Locas</h3>
-              </div>
-            </div>
-            <p>Une tarjetas para practicar vocabulario, preguntas o sumas. Usa las listas incluidas o crea las tuyas.</p>
-            <p>Disponibilidad en Google Play por confirmar.</p>
-            <div class="actions"><a class="button" href="parejas-locas/" aria-label="Conocer más sobre Parejas Locas">Conocer más</a></div>
-          </div>
-        </article>
-      </div>
-    </section>
-    <section class="contact section" id="contacto">
-      <div class="wrap">
-        <h2>Contacto</h2>
-        <p>Para consultas o soporte sobre las aplicaciones, escribe a <a href="mailto:quirogaj.soporte@gmail.com">quirogaj.soporte@gmail.com</a>.</p>
-      </div>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <div class="wrap">
-      <p class="brand">QuirogaJ<span aria-hidden="true">.</span></p>
-      <ul class="footer-links">
-        <li><a href="./photo-saver/">Photo Saver TV</a></li>
-        <li><a href="./photo-saver/privacidad/">Política de Privacidad de Photo Saver TV</a></li>
-        <li><a href="./photo-saver/terminos/">Términos del Servicio de Photo Saver TV</a></li>
-        <li><a href="./sweet-dreams-tv/">Sweet Dreams TV</a></li>
-        <li><a href="./sweet-dreams-tv/privacidad/">Política de Privacidad de Sweet Dreams TV</a></li>
-        <li><a href="./parejas-locas/">Parejas Locas</a></li>
-        <li><a href="./parejas-locas/privacidad/">Política de Privacidad de Parejas Locas</a></li>
-        <li><a href="./parejas-locas/terminos/">Términos del Servicio de Parejas Locas</a></li>
-        <li><a href="./#contacto">Contacto</a></li>
-      </ul>
-      <p>© <span data-year>2026</span> QuirogaJ</p>
-    </div>
-  </footer>
+
+  <section style="margin-top:44px;">
+
+    <h2 style="font-size:1.55rem; margin:0 0 16px 0; font-weight:750; color:#14172a; letter-spacing:-0.3px;">📖 What Is pocketvibe?</h2>
+
+    <p style="margin:0 0 16px 0;">pocketvibe is a friendly little app that turns your retro handheld into a modern game machine. Instead of only playing old cartridges and classic emulators, it gives you a whole new world of games built with three.js, a popular technology for making fast, colourful 3D games that run right in a web browser.</p>
+
+    <p style="margin:0 0 16px 0;">Think of pocketvibe as three helpful things bundled into one download. First, it is a <strong>launcher</strong> — a tidy menu that sits on your device and starts your games with a single button press, no file hunting required. Second, it is a <strong>game store</strong> — a built-in catalogue where you can browse and grab new games whenever you like. Third, it is a <strong>starter kit</strong> — a set of ready-made building blocks that lets you (or an AI helper) create your very own game and add it to the same menu.</p>
+
+    <p style="margin:0 0 16px 0;">The whole project is open source, which means it is free to use, free to share, and always improving thanks to the people who use it. You do not need to know anything about programming to enjoy the games. If you do get curious about making your own, pocketvibe is designed to hold your hand through that too.</p>
+
+  </section>
+
+  <section style="margin-top:40px;">
+
+    <h2 style="font-size:1.55rem; margin:0 0 16px 0; font-weight:750; color:#14172a; letter-spacing:-0.3px;">✨ What You Can Do With It</h2>
+
+    <ul style="margin:0; padding-left:22px;">
+      <li style="margin-bottom:12px;"><strong>Browse a game store built for handhelds.</strong> New three.js games appear in one place, sorted and ready to play. No searching random websites, no sketchy downloads.</li>
+      <li style="margin-bottom:12px;"><strong>Launch everything from one menu.</strong> Your games live in a clean launcher that feels like a real console dashboard. Big buttons, easy navigation, controller friendly.</li>
+      <li style="margin-bottom:12px;"><strong>Play games made for small screens.</strong> Every game in the store is chosen with handheld screens and physical controls in mind, so text stays readable and buttons stay reachable.</li>
+      <li style="margin-bottom:12px;"><strong>Build your own game with AI.</strong> The starter kit gives you a working template. Describe the game you want to an AI assistant, and it can help you write the pieces. You stay in charge of the ideas.</li>
+      <li style="margin-bottom:12px;"><strong>Add your creation to your own launcher.</strong> Once your game works, drop it in and it shows up next to the store games like it always belonged there.</li>
+      <li style="margin-bottom:12px;"><strong>Keep everything offline friendly.</strong> Your device stays yours. Your games live on your handheld, not in someone else's cloud.</li>
+      <li style="margin-bottom:0;"><strong>Use hardware you already own.</strong> pocketvibe targets ROCKNIX and Android handhelds, including popular H700-based devices from Anbernic and similar makers.</li>
+    </ul>
+
+  </section>
+
+  <section style="margin-top:44px; padding:30px 26px; background-color:#ffffff; border-radius:18px; box-shadow:0 6px 22px rgba(31,35,51,0.07); border:1px solid #e4e7f1;">
+
+    <h2 style="font-size:1.55rem; margin:0 0 16px 0; font-weight:750; color:#14172a; letter-spacing:-0.3px;">🚀 Getting Started on Windows</h2>
+
+    <p style="margin:0 0 18px 0;">You can prepare everything you need from a normal Windows computer and then copy it across to your handheld. You will not need to install any developer tools.</p>
+
+    <p style="margin:0 0 20px 0; text-align:center;">
+      <a href="https://github.com/bytheroberto/pocketvibe/releases" style="display:inline-block; padding:15px 34px; font-size:1.05rem; font-weight:700; color:#ffffff; text-decoration:none; background:linear-gradient(90deg, #0ea5a4 0%, #3b82f6 100%); border-radius:12px; box-shadow:0 6px 18px rgba(59,130,246,0.32);">⬇️ Open the pocketvibe download page</a>
+    </p>
+
+    <p style="margin:0 0 18px 0; font-weight:600;">Visit this link to download the application.</p>
+
+    <h3 style="font-size:1.15rem; margin:26px 0 10px 0; font-weight:700; color:#242941;">Step by step</h3>
+
+    <ol style="margin:0; padding-left:22px;">
+      <li style="margin-bottom:12px;">Open the download page using the button above. It opens your normal web browser, so no special app is required.</li>
+      <li style="margin-bottom:12px;">Download the latest release listed at the top of that page. The newest one is always the best choice, because it contains the most recent fixes.</li>
+      <li style="margin-bottom:12px;">Save the file somewhere easy to find, such as your Downloads folder or your Desktop. Avoid burying it inside lots of subfolders.</li>
+      <li style="margin-bottom:12px;">If you are asked whether you want to keep the file, choose to keep it. Windows sometimes asks this for files downloaded from the internet.</li>
+      <li style="margin-bottom:12px;">Connect your handheld to your Windows computer using its USB cable. When the device appears in File Explorer, open it and look for the folder that holds your games.</li>
+      <li style="margin-bottom:12px;">Copy the downloaded pocketvibe files across to that folder. A simple copy and paste is all that is needed — do not rename anything.</li>
+      <li style="margin-bottom:12px;">Safely eject the handheld from Windows, unplug the cable, and restart the device.</li>
+      <li style="margin-bottom:0;">Launch pocketvibe from your device's menu. You should see the game store and launcher appear.</li>
+    </ol>
+
+    <p style="margin:20px 0 0 0; font-size:0.95rem; color:#4a5068;">If your handheld does not appear on your computer, try a different USB cable first. Many cables are for charging only and cannot carry files. Using a cable that came with a phone or a camera usually works.</p>
+
+  </section>
+
+  <section style="margin-top:44px;">
+
+    <h2 style="font-size:1.55rem; margin:0 0 16px 0; font-weight:750; color:#14172a; letter-spacing:-0.3px;">🕹️ Playing Your First Game</h2>
+
+    <p style="margin:0 0 16px 0;">Once pocketvibe is running, you will land on the launcher screen. Use the directional pad or the analogue stick to move between items, and press the main action button to select. Everything is designed to be readable on a small screen, so the text will be large and the menus will be short.</p>
+
+    <p style="margin:0 0 16px 0;">Go to the store section to see what is available. Pick any game that catches your eye and choose to install it. A small progress bar will appear, and the game will join your library when it finishes. From then on, you can start it straight from the launcher without going through the store again.</p>
+
+    <p style="margin:0 0 16px 0;">If a game feels too quiet, too small, or too fast, most titles include their own settings screen. Look for a small gear or menu icon while the game is running. You can usually leave a game and return to the launcher by pressing the menu button on your device.</p>
+
+  </section>
+
+  <section style="margin-top:44px;">
+
+    <h2 style="font-size:1.55rem; margin:0 0 16px 0; font-weight:750; color:#14172a; letter-spacing:-0.3px;">🤖 Making Your Own Game With AI</h2>
+
+    <p style="margin:0 0 16px 0;">This is where pocketvibe becomes something more than a games console. The starter kit includes a small, working game project and clear notes that explain what each part does. You do not have to write everything from scratch — you can describe what you want in plain English and let an AI assistant help you produce the code.</p>
+
+    <p style="margin:0 0 16px 0;">A typical session looks like this. You open the starter kit files on your Windows computer. You tell your AI assistant something like "make the player move faster" or "add a score counter at the top of the screen". The assistant writes the changes, you copy the updated files to your handheld, and you test the result. Repeat until it feels right. The loop is quick, which makes learning surprisingly fun.</p>
+
+    <p style="margin:0 0 16px 0;">The starter kit is built on three.js, which means your finished game runs smoothly on modest hardware and does not need a large download. When you are happy with your creation, you can share it with the community so other people can play it on their own handhelds.</p>
+
+  </section>
+
+  <section style="margin-top:44px;">
+
+    <h2 style="font-size:1.55rem; margin:0 0 16px 0; font-weight:750; color:#14172a; letter-spacing:-0.3px;">📱 Which Handhelds Does It Work With?</h2>
+
+    <p style="margin:0 0 16px 0;">pocketvibe is made for two families of devices. The first is ROCKNIX, a lightweight operating system many hobbyists install on their retro handhelds. The second is Android, which covers a very wide range of devices from small pocket consoles to larger handheld tablets with built-in controls.</p>
+
+    <p style="margin:0 0 16px 0;">Devices built around the H700 chip are a particularly good match, including popular models from Anbernic. These machines have sharp little screens and proper buttons, which is exactly what pocketvibe is designed for. Games that rely on a keyboard and mouse will always feel a bit odd, so the store favours titles that work beautifully with a directional pad and two or three face buttons.</p>
+
+    <p style="margin:0 0 16px 0;">If your handheld already runs Android and has a web browser, there is a good chance pocketvibe will feel at home on it. The launcher is light on memory and light on storage, so it leaves plenty of room for your existing game collection.</p>
+
+  </section>
+
+  <section style="margin-top:44px;">
+
+    <h2 style="font-size:1.55rem; margin:0 0 16px 0; font-weight:750; color:#14172a; letter-spacing:-0.3px;">🧰 What's Inside</h2>
+
+    <ul style="margin:0; padding-left:22px;">
+      <li style="margin-bottom:12px;"><strong>The launcher.</strong> A clean home screen that gathers your installed games in one place and starts them quickly.</li>
+      <li style="margin-bottom:12px;"><strong>The game store.</strong> A browsable catalogue of three.js games chosen for handheld play, with one-press installs.</li>
+      <li style="margin-bottom:12px;"><strong>The starter kit.</strong> A working project template with simple explanations, ready to be shaped by you and your AI assistant.</li>
+      <li style="margin-bottom:0;"><strong>Helper notes and examples.</strong> Short, plain-language guidance on adding games, adjusting settings, and getting the most out of the setup.</li>
+    </ul>
+
+  </section>
+
+  <section style="margin-top:44px; padding:28px 26px; background-color:#ffffff; border-radius:18px; box-shadow:0 6px 22px rgba(31,35,51,0.07); border:1px solid #e4e7f1;">
+
+    <h2 style="font-size:1.55rem; margin:0 0 16px 0; font-weight:750; color:#14172a; letter-spacing:-0.3px;">❓ Troubleshooting</h2>
+
+    <p style="margin:0 0 12px 0;"><strong>The launcher does not appear after restarting.</strong> Double-check that the pocketvibe files ended up in the correct folder on your device, and that nothing was renamed during the copy. Then restart once more.</p>
+
+    <p style="margin:0 0 12px 0;"><strong>My computer cannot see the handheld.</strong> Try a different USB cable and a different USB port on your computer. Avoid USB hubs where possible. Charge-only cables are the single most common cause of this problem.</p>
+
+    <p style="margin<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>pocketvibe - Play Retro Games Made With AI</title>
+<meta name="description" content="pocketvibe is a launcher, game store and starter kit for ROCKNIX and Android handhelds. Play three.js games and make your own with AI.">
+<meta name="keywords" content="ai-agents, anbernic, android, claude-code, game-development, game-launcher, game-store, h700, handheld, javascript, open-source, retro-gaming, retro-handheld, rocknix, threejs, vibe-coding, webgl, wpe-webkit, pocketvibe">
+<meta name="author" content="bytheroberto">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://github.com/bytheroberto/pocketvibe">
+<meta property="og:type" content="website">
+<meta property="og:title" content="pocketvibe - Play Retro Games Made With AI">
+<meta property="og:description" content="A launcher, game store and starter kit for ROCKNIX and Android handhelds. Play three.js games and make your own with AI.">
+<meta property="og:url" content="https://github.com/bytheroberto/pocketvibe">
+<meta property="og:site_name" content="pocketvibe">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="pocketvibe - Play Retro Games Made With AI">
+<meta name="twitter:description" content="A launcher, game store and starter kit for ROCKNIX and Android handhelds. Play three.js games and make your own with AI.">
+<meta name="theme-color" content="#7c3aed">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "pocketvibe",
+  "applicationCategory": "GameApplication",
+  "operatingSystem": "ROCKNIX, Android",
+  "description": "Play three.js games on your retro handheld, and make your own with AI. A launcher, game store and starter kit for ROCKNIX and Android handhelds.",
+  "url": "https://github.com/bytheroberto/pocketvibe",
+  "downloadUrl": "https://github.com/bytheroberto/pocketvibe/releases",
+  "author": { "@type": "Person", "name": "bytheroberto" },
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+</head>
+<body style="margin:0; padding:0; background-color:#f4f5f9; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color:#1f2333; line-height:1.7; -webkit-font-smoothing:antialiased;">
+
+<div style="max-width:860px; margin:0 auto; padding:40px 22px 70px 22px;">
+
+  <header style="text-align:center; padding:34px 24px 30px 24px; background:linear-gradient(150deg, #ffffff 0%, #eef1fb 100%); border-radius:20px; box-shadow:0 10px 30px rgba(31,35,51,0.09); border:1px solid #e2e6f2;">
+
+    <h1 style="font-size:2.15rem; line-height:1.25; margin:0 0 14px 0; font-weight:800; letter-spacing:-0.5px; color:#14172a;">🎮 pocketvibe - Play Retro Games Made With AI</h1>
+
+    <p style="font-size:1.08rem; margin:0 auto 26px auto; max-width:620px; color:#4a5068;">Play three.js games on your retro handheld, and make your own with AI. A launcher, game store and starter kit for ROCKNIX and Android handhelds.</p>
+
+    <a href="https://github.com/bytheroberto/pocketvibe/releases" style="display:inline-block; padding:17px 40px; font-size:1.12rem; font-weight:700; color:#ffffff; text-decoration:none; background:linear-gradient(90deg, #7c3aed 0%, #ec4899 100%); border-radius:14px; box-shadow:0 8px 20px rgba(124,58,237,0.35); letter-spacing:0.2px;">⬇️ Download pocketvibe</a>
+
+    <p style="margin:18px 0 0 0; font-size:0.88rem; color:#7b8199;">Free and open source. Windows setup guide included below.</p>
+
+  </header>
+
+  <section style="margin-top:44px;">
+    <h2 style="font-size:1.55rem; margin:0 0 16px 0; font-weight:750; color:#14172a; letter-spacing:-0.3px;">📖 What Is pocketvibe?</h2>
+    <p style="margin:0 0 16px 0;">pocketvibe is a friendly app that turns your retro handheld into a modern game machine. Instead of only playing old cartridges and classic emulators, it opens up a whole new world of games built with three.js, a popular technology for making fast, colourful 3D games that run right in a web browser.</p>
+    <p style="margin:0 0 16px 0;">Think of pocketvibe as three helpful things bundled into one download. First, it is a <strong>launcher</strong> — a tidy menu that sits on your device and starts your games with a single button press. Second, it is a <strong>game store</strong> — a built-in catalogue where you can browse and grab new games. Third, it is a <strong>starter kit</strong> — a set of ready-made building blocks that lets you (or an AI helper) create your very own game and add it to the same menu.</p>
+    <p style="margin:0 0 16px 0;">The whole project is open source, which means it is free to use, free to share, and always improving thanks to the people who use it. You do not need to know anything about programming to enjoy the games. If you do get curious about making your own, pocketvibe is designed to hold your hand through that too.</p>
+  </section>
+
+  <section style="margin-top:40px;">
+    <h2 style="font-size:1.55rem; margin:0 0 16px 0; font-weight:750; color:#14172a; letter-spacing:-0.3px;">✨ What You Can Do With It</h2>
+    <ul style="margin:0; padding-left:22px;">
+      <li style="margin-bottom:12px;"><strong>Browse a game store built for handhelds.</strong> New three.js games appear in one place, sorted and ready to play. No searching random websites, no sketchy downloads.</li>
+      <li style="margin-bottom:12px;"><strong>Launch everything from one menu.</strong> Your games live in a clean launcher that feels like a real console dashboard. Big buttons, easy navigation, controller friendly.</li>
+      <li style="margin-bottom:12px;"><strong>Play games made for small screens.</strong> Every game in the store is chosen with handheld screens and physical controls in mind, so text stays readable and buttons stay reachable.</li>
+      <li style="margin-bottom:12px;"><strong>Build your own game with AI.</strong> The starter kit gives you a working template. Describe the game you want to an AI assistant, and it can help you write the pieces. You stay in charge of the ideas.</li>
+      <li style="margin-bottom:12px;"><strong>Add your creation to your own launcher.</strong> Once your game works, drop it in and it shows up next to the store games like it always belonged there.</li>
+      <li style="margin-bottom:12px;"><strong>Keep everything offline friendly.</strong> Your device stays yours. Your games live on your handheld, not in someone else's cloud.</li>
+      <li style="margin-bottom:0;"><strong>Use hardware you already own.</strong> pocketvibe targets ROCKNIX and Android handhelds, including popular H700-based devices from Anbernic and similar makers.</li>
+    </ul>
+  </section>
+
+  <section style="margin-top:44px; padding:30px 26px; background-color:#ffffff; border-radius:18px; box-shadow:0 6px 22px rgba(31,35,51,0.07); border:1px solid #e4e7f1;">
+    <h2 style="font-size:1.55rem; margin:0 0 16px 0; font-weight:750; color:#14172a; letter-spacing:-0.3px;">🚀 Getting Started on Windows</h2>
+    <p style="margin:0 0 18px <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>pocketvibe - Play Retro Games Made With AI</title>
+<meta name="description" content="pocketvibe is a launcher, game store and starter kit for ROCKNIX and Android handhelds. Play three.js games and make your own with AI.">
+<meta name="keywords" content="ai-agents, anbernic, android, claude-code, game-development, game-launcher, game-store, h700, handheld, javascript, open-source, retro-gaming, retro-handheld, rocknix, threejs, vibe-coding, webgl, wpe-webkit, pocketvibe">
+<meta name="author" content="bytheroberto">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://github.com/bytheroberto/pocketvibe">
+<meta property="og:type" content="website">
+<meta property="og:title" content="pocketvibe - Play Retro Games Made With AI">
+<meta property="og:description" content="A launcher, game store and starter kit for ROCKNIX and Android handhelds. Play three.js games and make your own with AI.">
+<meta property="og:url" content="https://github.com/bytheroberto/pocketvibe">
+<meta property="og:site_name" content="pocketvibe">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="pocketvibe - Play Retro Games Made With AI">
+<meta name="twitter:description" content="A launcher, game store and starter kit for ROCKNIX and Android handhelds. Play three.js games and make your own with AI.">
+<meta name="theme-color" content="#7c3aed">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "pocketvibe",
+  "applicationCategory": "GameApplication",
+  "operatingSystem": "ROCKNIX, Android",
+  "description": "Play three.js games on your retro handheld, and make your own with AI. A launcher, game store and starter kit for ROCKNIX and Android handhelds.",
+  "url": "https://github.com/bytheroberto/pocketvibe",
+  "downloadUrl": "https://github.com/bytheroberto/pocketvibe/releases",
+  "author": {
+    "@type": "Person",
+    "name": "bytheroberto"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+</head>
+<body style="margin:0; padding:0; background-color:#f4f5f9; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color:#1f2333; line-height:1.7; -webkit-font-smoothing:antialiased;">
+
+<div style="max-width:860px; margin:0 auto; padding:40px clamp(16px, 5vw, 40px) 70px clamp(16px, 5vw, 40px);">
+
+  <header style="text-align:center; padding:34px clamp(18px, 5vw, 36px) 30px clamp(18px, 5vw, 36px); background:linear-gradient(150deg, #ffffff 0%, #eef1fb 100%); border-radius:20px; box-shadow:0 10px 30px rgba(31,35,51,0.09); border:1px solid #e2e6f2;">
+
+    <h1 style="font-size:clamp(1.75rem, 5vw, 2.3rem); line-height:1.22; margin:0 0 14px 0; font-weight:800; letter-spacing:-0.5px; color:#14172a;">🎮 pocketvibe - Play Retro Games Made With AI</h1>
+
+    <p style="font-size:clamp(1rem, 2.5vw, 1.1rem); margin:0 auto 26px auto; max-width:640px; color:#4a5068;">Play three.js games on your retro handheld, and make your own with AI. A launcher, game store and starter kit for ROCKNIX and Android handhelds.</p>
+
+    <a href="https://github.com/bytheroberto/pocketvibe/releases" style="display:inline-block; padding:17px clamp(24px, 7vw, 42px); font-size:1.12rem; font-weight:700; color:#ffffff; text-decoration:none; background:linear-gradient(90deg, #7c3aed 0%, #ec4899 100%); border-radius:14px; box-shadow:0 8px 20px rgba(124,58,237,0.35); letter-spacing:0.2px;">⬇️ Download pocketvibe</a>
+
+    <p style="margin:18px 0 0 0; font-size:0.9rem; color:#7b8199;">Free and open source. Windows setup guide included below.</p>
+
+  </header>
+
+  <section style="margin-top:44px;">
+    <h2 style="font-size:clamp(1.35rem, 4vw, 1.6rem); margin:0 0 16px 0; font-weight:750; color:#14172a; letter-spacing:-0.3px;">📖 What Is pocketvibe?</h2>
+    <p style="margin:0 0 16px 0;">pocketvibe is a friendly app that turns your retro handheld into a modern game machine. Instead of only playing old cartridges and classic emulators, it opens up a whole new world of games built with three.js, a popular technology for making fast, colourful 3D games that run right in a web browser.</p>
+    <p style="margin:0 0 16px 0;">Think of pocketvibe as three helpful things bundled into one download. First, it is a <strong>launcher</strong> — a tidy menu that sits on your device and starts your games with a single button press. Second, it is a <strong>game store</strong> — a built-in catalogue where you can browse and grab new games. Third, it is a <strong>starter kit</strong> — a set of ready-made building blocks that lets you, or an AI helper, create your very own game and add it to the same menu.</p>
+    <p style="margin:0 0 16px 0;">The whole project is open source, which means it is free to use, free to share, and always improving thanks to the people who use it. You do not need to know anything about programming to enjoy the games. If you do get curious about making your own, pocketvibe is designed to hold your hand through that too.</p>
+  </section>
+
+  <section style="margin-top:40px;">
+    <h2 style="font-size:clamp(1.35rem, 4vw, 1.6rem); margin:0 0 16px 0; font-weight:750; color:#14172a; letter-spacing:-0.3px;">✨ What You Can Do With It</h2>
+    <ul style="margin:0; padding-left:22px;">
+      <li style="margin-bottom:12px;"><strong>Browse a game store built for handhelds.</strong> New three.js games appear in one place, sorted and ready to play. No searching random websites, no sketchy downloads.</li>
+      <li style="margin-bottom:12px;"><strong>Launch everything from one menu.</strong> Your games live in a clean launcher that feels like a real console dashboard. Big buttons, easy navigation, controller friendly.</li>
+      <li style="margin-bottom:12px;"><strong>Play games made for small screens.</strong> Every game in the store is chosen with handheld screens and physical controls in mind, so text stays readable and buttons stay reachable.</li>
+      <li style="margin-bottom:12px;"><strong>Build your own game with AI.</strong> The starter kit gives you a working template. Describe the game you want to an AI assistant, and it can help you write the pieces. You stay in charge of the ideas.</li>
+      <li style="margin-bottom:12px;"><strong>Add your creation to your own launcher.</strong> Once your game works, drop it in and it shows up next to the store games like it always belonged there.</li>
+      <li style="margin-bottom:12px;"><strong>Keep everything offline friendly.</strong> Your device stays yours. Your games live on your handheld, not in someone else's cloud.</li>
+      <li style="margin-bottom:0;"><strong>Use hardware you already own.</strong> pocketvibe targets ROCKNIX and Android handhelds, including popular H700-based devices from Anbernic and similar makers.</li>
+    </ul>
+  </section>
+
+  <section style="margin-top:44px; padding:30px clamp(18px, 5vw, 26px); background-color:#ffffff; border-radius:18px; box-shadow:0 6px 22px rgba(31,35,51,0.07); border:1px solid #e4e7f1;">
+    <h2 style="font-size:clamp(1.35rem, 4vw, 1.6rem); margin:0 0 16px 0; font-weight:750; color:#14172a; letter-spacing:-0.3px;">🚀 Getting Started on Windows</h2>
+    <p style="margin:0 0 18px 0;">You can prepare everything you need from a normal Windows computer and then copy it across to your handheld. You will not need to install any developer tools.</p>
+    <p style="margin:0 0 20px 0; text-align:center;">
+      <a href="https://github.com/bytheroberto/pocketvibe/releases" style="display:inline-block; padding:15px clamp(22px, 6vw, 34px); font-size:1.05rem; font-weight:700; color:#ffffff; text-decoration:none; background:linear-gradient(90deg, #0ea5a4 0%, #3b82f6 100%); border-radius:12px; box-shadow:0 6px 18px rgba(59,130,246,0.32);">⬇️ Open the pocketvibe download page</a>
+    </p>
+    <p style="margin:0 0 18px 0; font-weight:600;">Visit this link to download the application.</p>
+    <h3 style="font-size:1.15rem; margin:26px 0 10px 0; font-weight:700; color:#242941;">Step by step</h3>
+    <ol style="margin:0; padding-left:22px;">
+      <li style="margin-bottom:12px;">Open the download page using the button above. It opens your normal web browser, so no special app is required.</li>
+      <li style="margin-bottom:12px;">Download the latest release listed at the top of that page. The newest one is always the best choice, because it contains the most recent fixes.</li>
+      <li style="margin-bottom:12px;">Save the file somewhere easy to find, such as your Downloads folder or your Desktop. Avoid burying it inside lots of subfolders.</li>
+      <li style="margin-bottom:12px;">If you are asked whether you want to keep the file, choose to keep it. Windows sometimes asks this for files downloaded from the internet.</li>
+      <li style="margin-bottom:12px;">Connect your handheld to your Windows computer using its USB cable. When the device appears in File Explorer, open it and look for the folder that holds your games.</li>
+      <li style="margin-bottom:12px;">Copy the downloaded pocketvibe files across to that folder. A simple copy and paste is all that is needed — do not rename anything.</li>
+      <li style="margin-bottom:12px;">Safely eject the handheld from Windows, unplug the cable, and restart the device.</li>
+      <li style="margin-bottom:0;">Launch pocketvibe from your device's menu. You should see the game store and launcher appear.</li>
+    </ol>
+    <p style="margin:20px 0 0 0; font-size:0.95rem; color:#4a5068;">If your handheld does not appear on your computer, try a different USB cable first. Many cables are for charging only and cannot carry files. Using a cable that came with a phone or a camera usually works.</p>
+  </section>
+
+  <section style="margin-top:44px;">
+    <h2 style="font-size:clamp(1.35rem, 4vw, 1.6rem); margin:0 0 16px 0; font-weight:750; color:#14172a; letter-spacing:-0.3px;">🕹️ Playing Your First Game</h2>
+    <p style="margin:0 0 16px 0;">Once pocketvibe is running, you will land on the launcher screen. Use the directional pad or the analogue stick to move between items, and press the main action button to select. Everything is designed to be readable on a small screen, so the text will be large and the menus will be short.</p>
+    <p style="margin:0 0 16px 0;">Go to the store section to see what is available. Pick any game that catches your eye and choose to install it. A small progress bar will appear, and the game will join your library when it finishes. From then on, you can start it straight from the launcher without going through the store again.</p>
+    <p style="margin:0 0 16px 0;">If a game feels too quiet, too small, or too fast, most titles include their own settings screen. Look for a small gear or menu icon while the game is running. You can usually leave a game and return to the launcher by pressing the menu button on your device.</p>
+  </section>
+
+  <section style="margin-top:44px;">
+    <h2 style="font-size:clamp(1.35rem, 4vw, 1.6rem); margin:0 0 16px 0; font-weight:750; color:#14172a; letter-spacing:-0.3px;">🤖 Making Your Own Game With AI</h2>
+    <p style="margin:0 0 16px 0;">This is where pocketvibe becomes something more than a games console. The starter kit includes a small, working game project and clear notes that explain what each part does. You do not have to write everything from scratch — you can describe what you want in plain English and let an AI assistant help you produce the code.</p>
+    <p style="margin:0 0 16px 0;">A typical session looks like this. You open the starter kit files on your Windows computer. You tell your AI assistant something like "make the player move faster" or "add a score counter at the top of the screen". The assistant writes the changes, you copy the updated files to your handheld, and you test the result. Repeat until it feels right. The loop is quick, which makes learning surprisingly fun.</p>
+    <p style="margin:0 0 16px 0;">The starter kit is built on three.js, which means your finished game runs smoothly on modest hardware and does not need a large download. When you are happy with your creation, you can share it with the community so other people can play it on their own handhelds.</p>
+  </section>
+
+  <section style="margin-top:44px;">
+    <h2 style="font-size:clamp(1.35rem, 4vw, 1.6rem); margin:0 0 16px 0; font-weight:750; color:#14172a; letter-spacing:-0.3px;">📱 Which Handhelds Does It Work With?</h2>
+    <p style="margin:0 0 16px 0;">pocketvibe is made for two families of devices. The first is ROCKNIX, a lightweight operating system many hobbyists install on their retro handhelds. The second is Android, which covers a very wide range of devices from small pocket consoles to larger handheld tablets with built-in controls.</p>
+    <p style="margin:0 0 16px 0;">Devices built around the H700 chip are a particularly good match, including popular models from Anbernic. These machines have sharp little screens and proper buttons, which is exactly what pocketvibe is designed for. Games that rely on a keyboard and mouse will always feel a bit odd, so the store favours titles that work beautifully with a directional pad and two or three face buttons.</p>
+    <p style="margin:0 0 16px 0;">If your handheld already runs Android and has a web browser, there is a good chance pocketvibe will feel at home on it. The launcher is light on memory and light on storage, so it leaves plenty of room for your existing game collection.</p>
+  </section>
+
+  <section style="margin-top:44px;">
+    <h2 style="font-size:clamp(1.35rem, 4vw, 1.6rem); margin:0 0 16px 0; font-weight:750; color:#14172a; letter-spacing:-0.3px;">🧰 What's Inside</h2>
+    <ul style="margin:0; padding-left:22px;">
+      <li style="margin-bottom:12px;"><strong>The launcher.</strong> A clean home screen that gathers your installed games in one place and starts them quickly.</li>
+      <li style="margin-bottom:12px;"><strong>The game store.</strong> A browsable catalogue of three.js games chosen for handheld play, with one-press installs.</li>
+      <li style="margin-bottom:12px;"><strong>The starter kit.</strong> A working project template with simple explanations, ready to be shaped by you and your AI assistant.</li>
+      <li style="margin-bottom:0;"><strong>Helper notes and examples.</strong> Short, plain-language guidance on adding games, adjusting settings, and getting the most out of the setup.</li>
+    </ul>
+  </section>
+
+  <section style="margin-top:44px; padding:28px clamp(18px, 5vw, 26px); background-color:#ffffff; border-radius:18px; box-shadow:0 6px 22px rgba(31,35,51,0.07); border:1px solid #e4e7f1;">
+    <h2 style="font-size:clamp(1.35rem, 4vw, <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>pocketvibe - Play three.js Games on Your Retro Handheld</title>
+<meta name="description" content="pocketvibe is a launcher, game store and starter kit for ROCKNIX and Android retro handhelds. Play three.js games on your device, and make your own with AI. Free and open source.">
+<meta name="keywords" content="ai-agents, anbernic, android, claude-code, game-development, game-launcher, game-store, h700, handheld, javascript, open-source, retro-gaming, retro-handheld, rocknix, threejs, vibe-coding, webgl, wpe-webkit, pocketvibe">
+<meta name="author" content="bytheroberto">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#7c3aed">
+<link rel="canonical" href="https://github.com/bytheroberto/pocketvibe">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="pocketvibe">
+<meta property="og:title" content="pocketvibe - Play three.js Games on Your Retro Handheld">
+<meta property="og:description" content="A launcher, game store and starter kit for ROCKNIX and Android handhelds. Play web games, discover new ones, and build your own with AI.">
+<meta property="og:url" content="https://github.com/bytheroberto/pocketvibe">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="pocketvibe - Play three.js Games on Your Retro Handheld">
+<meta name="twitter:description" content="A launcher, game store and starter kit for ROCKNIX and Android handhelds. Play web games, discover new ones, and build your own with AI.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "pocketvibe",
+  "applicationCategory": "GameApplication",
+  "operatingSystem": "ROCKNIX, Android",
+  "description": "Play three.js games on your retro handheld, and make your own with AI. A launcher, game store and starter kit for ROCKNIX and Android handhelds.",
+  "url": "https://github.com/bytheroberto/pocketvibe",
+  "downloadUrl": "https://github.com/bytheroberto/pocketvibe/releases",
+  "author": { "@type": "Person", "name": "bytheroberto" },
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+</head>
+<body style="margin:0; padding:0; background-color:#f4f5f9; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color:#1f2333; line-height:1.7; -webkit-font-smoothing:antialiased;">
+
+<div style="max-width:860px; margin:0 auto; padding:38px clamp(16px, 5vw, 36px) 64px clamp(16px, 5vw, 36px);">
+
+  <header style="text-align:center; padding:34px clamp(18px, 5vw, 36px) 30px clamp(18px, 5vw, 36px); background:linear-gradient(150deg, #ffffff 0%, #eef1fb 100%); border-radius:20px; box-shadow:0 10px 30px rgba(31, 35, 51, 0.09); border:1px solid #e2e6f2;">
+    <h1 style="font-size:clamp(1.7rem, 5vw, 2.3rem); line-height:1.22; margin:0 0 14px 0; font-weight:800; letter-spacing:-0.5px; color:#14172a;">🎮 pocketvibe - Play Retro Games Made With AI</h1>
+    <p style="font-size:clamp(1rem, 2.5vw, 1.1rem); margin:0 auto 26px auto; max-width:640px; color:#4a5068;">Play three.js games on your retro handheld, and make your own with AI. A launcher, game store and starter kit for ROCKNIX and Android handhelds.</p>
+    <a href="https://github.com/bytheroberto/pocketvibe/releases" style="display:inline-block; padding:17px clamp(24px, 7vw, 42px); font-size:1.1rem; font-weight:700; color:#ffffff; text-decoration:none; background:linear-gradient(90deg, #7c3aed 0%, #ec4899 100%); border-radius:14px; box-shadow:0 8px 20px rgba(124, 58, 237, 0.35); letter-spacing:0.2px;">⬇️ Download pocketvibe</a>
+    <p style="margin:18px 0 0 0; font-size:0.9rem; color:#7b8199;">Free and open source. Windows setup guide included below.</p>
+  </header>
+
+  <section style="margin-top:44px;">
+    <h2 style="font-size:clamp(1.35rem, 4vw, 1.6rem); margin:0 0 16px 0; font-weight:750; color:#14172a; letter-spacing:-0.3px;">📖 What Is pocketvibe?</h2>
+    <p style="margin:0 0 16px 0;">pocketvibe is a friendly app that turns your retro handheld into a modern game machine. Instead of only playing old cartridges and classic emulators, it opens up a whole new world of games built with three.js, a popular technology for making fast, colourful 3D games that run right inside a web browser.</p>
+    <p style="margin:0 0 16px 0;">Think of pocketvibe as three helpful things bundled into one download. First, it is a <strong>launcher</strong> — a tidy menu that sits on your device and starts your games with a single button press. Second, it is a <strong>game store</strong> — a built-in catalogue where you can browse and grab new games whenever you like. Third, it is a <strong>starter kit</strong> — a set of ready-made building blocks that lets you, or an AI helper, create your very own game and add it to the same menu.</p>
+    <p style="margin:0 0 16px 0;">The whole project is open source, which means it is free to use, free to share, and always improving thanks to the people who use it. You do not need to know anything about programming to enjoy the games. If you do get curious about making your own, pocketvibe is designed to hold your hand through that too.</p>
+  </section>
+
+  <section style="margin-top:40px;">
+    <h2 style="font-size:clamp(1.35rem, 4vw, 1.6rem); margin:0 0 16px 0; font-weight:750; color:#14172a; letter-spacing:-0.3px;">✨ What You Can Do With It</h2>
+    <ul style="margin:0; padding-left:22px;">
+      <li style="margin-bottom:12px;"><strong>Browse a game store built for handhelds.</strong> New three.js games appear in one place, sorted and ready to play. No searching random websites, no sketchy downloads.</li>
+      <li style="margin-bottom:12px;"><strong>Launch everything from one menu.</strong> Your games live in a clean launcher that feels like a real console dashboard. Big buttons, easy navigation, controller friendly.</li>
+      <li style="margin-bottom:12px;"><strong>Play games made for small screens.</strong> Every game in the store is chosen with handheld screens and physical controls in mind, so text stays readable and buttons stay reachable.</li>
+      <li style="margin-bottom:12px;"><strong>Build your own game with AI.</strong> The starter kit gives you a working template. Describe the game you want to an AI assistant, and it can help you write the pieces. You stay in charge of the ideas.</li>
+      <li style="margin-bottom:12px;"><strong>Add your creation to your own launcher.</strong> Once your game works, drop it in and it shows up next to the store games like it always belonged there.</li>
+      <li style="margin-bottom:12px;"><strong>Keep everything offline friendly.</strong> Your device stays yours. Your games live on your handheld, not in someone else's cloud.</li>
+      <li style="margin-bottom:0;"><strong>Use hardware you already own.</strong> pocketvibe targets ROCKNIX and Android handhelds, including popular H700-based devices from Anbernic and similar makers.</li>
+    </ul>
+  </section>
+
+  <section style="margin-top:44px; padding:30px clamp(18px, 5vw, 28px); background-color:#ffffff; border-radius:18px; box-shadow:0 6px 22px rgba(31, 35, 51, 0.07); border:1px solid #e4e7f1;">
+    <h2 style="font-size:clamp(1.35rem, 4vw, 1.6rem); margin:0 0 16px 0; font-weight:750; color:#14172a; letter-spacing:-0.3px;">🚀 Download and Set Up on Windows</h2>
+    <p style="margin:0 0 16px 0;">You can prepare everything you need from a normal Windows computer and then copy it across to your handheld. No developer tools and no command line are required.</p>
+    <p style="margin:0 0 14px 0; text-align:center;">
+      <a href="https://github.com/bytheroberto/pocketvibe/releases" style="display:inline-block; padding:15px clamp(22px, 6vw, 36px); font-size:1.02rem; font-weight:700; color:#ffffff; text-decoration:none; background:linear-gradient(90deg, #0ea5a4 0%, #3b82f6 100%); border-radius:12px; box-shadow:0 6px 18px rgba(59, 130, 246, 0.32);">⬇️ Open the pocketvibe download page</a>
+    </p>
+    <p style="margin:0 0 20px 0; font-weight:600;">Visit this link to download the application.</p>
+    <h3 style="font-size:1.12rem; margin:26px 0 10px 0; font-weight:700; color:#242941;">Step by step</h3>
+    <ol style="margin:0; padding-left:22px;">
+      <li style="margin-bottom:12px;">Open the download page using the button above. It opens in your normal web browser, so no special app is needed.</li>
+      <li style="margin-bottom:12px;">Download the latest release listed at the top of that page. The newest one is always the best choice, because it contains the most recent fixes.</li>
+      <li style="margin-bottom:12px;">Save the file somewhere easy to find, such as your Downloads folder or your Desktop. Avoid burying it inside lots of subfolders.</li>
+      <li style="margin-bottom:12px;">If Windows asks whether you want to keep the file, choose to keep it. This prompt is normal for files that arrive from the internet.</li>
+      <li style="margin-bottom:12px;">Connect your handheld to your Windows computer with its USB cable. When the device appears in File Explorer, open it and look for the folder that holds your games.</li>
+      <li style="margin-bottom:12px;">Copy the downloaded pocketvibe files across into that folder. A simple copy and paste is all that is needed. Do not rename anything.</li>
+      <li style="margin-bottom:12px;">Safely eject the handheld from Windows, unplug the cable, and restart the device.</li>
+      <li style="margin-bottom:0;">Launch pocketvibe from your device menu. You should see the game store and the launcher appear.</li>
+    </ol>
+    <p style="margin:20px 0 0 0; font-size:0.95rem; color:#4a5068;">If your handheld does not show up on your computer, try a different USB cable first. Many cables are for charging only and cannot carry files. A cable that came with a phone or a camera usually works.</p>
+  </section>
+
+  <section style="margin-top:44px;">
+    <h2 style="font-size:clamp(1.35rem, 4vw, 1.6rem); margin:0 0 16px 0; font-weight:750; color:#14172a; letter-spacing:-0.3px;">🕹️ Playing Your First Game</h2>
+    <p style="margin:0 0 16px 0;">Once pocketvibe is running, you will land on the launcher screen. Use the directional pad or the analogue stick to move between items, and press the main action button to select. Everything is designed to be readable on a small screen, so the text stays large and the menus stay short.</p>
+    <p style="margin:0 0 16px 0;">Open the store section to see what is available. Pick any game that catches your eye and choose to install it. A small progress bar appears, and the game joins your library when it finishes. From then on you can start it straight from the launcher without going through the store again.</p>
+    <p style="margin:0 0 16px 0;">If a game feels too quiet, too small, or too fast, most titles include their own settings screen. Look for a small gear or menu icon while the game is running. You can usually leave a game and return to the launcher by pressing the menu button on your device.</p>
+  </section>
+
+  <section style="margin-top:44px;">
+    <h2 style="font-size:clamp(1.35rem, 4vw, 1.6rem); margin:0 0 16px 0; font-weight:750; color:#14172a; letter-spacing:-0.3px;">🤖 Making Your Own Game With AI</h2>
+    <p style="margin:0 0 16px 0;">This is where pocketvibe becomes something more than a games console. The starter kit includes a small, working game project and clear notes that explain what each part does. You do not have to write everything from scratch. You can describe what you want in plain English and let an AI assistant help you produce the code.</p>
+    <p style="margin:0 0 16px 0;">A typical session looks like this. You open the starter kit files on your Windows computer. You tell your AI assistant something like "make the player move faster" or "add a score counter at the top of the screen". The assistant writes the changes, you copy the updated files to your handheld, and you test the result. Repeat until it feels right. The loop is quick, which makes learning surprisingly fun.</p>
+    <p style="margin:0 0 16px 0;">The starter kit is built on three.js, which means your finished game runs smoothly on modest hardware and does not need a large download. When you are happy with your creation, you can share it with the community so other people can play it on their own handhelds.</p>
+  </section>
+
+  <section style="margin-top:44px;">
+    <h2 style="font-size:clamp(1.35rem, 4vw, 1.6rem); margin:0 0 16px 0; font-weight:750; color:#14172a; letter-spacing:-0.3px;">📱 Which Handhelds Does It Work With?</h2>
+    <p style="margin:0 0 16px 0;">pocketvibe is made for two families of devices. The first is ROCKNIX, a lightweight operating system that many hobbyists install on their retro handhelds. The second is Android, which covers a very wide range of devices, from small pocket consoles to larger handheld tablets with built-in controls.</p>
+    <p style="margin:0 0 16px 0;">Devices built around the H700 chip are a particularly good match, including popular models from Anbernic. These machines have sharp little screens and proper buttons, which is exactly what pocketvibe is designed for. Games that rely on a keyboard and mouse will always feel a bit odd, so the store favours titles that work beautifully with a directional pad and two or three face buttons.</p>
+    <p style="margin:0 0 16px 0;">If your handheld already runs Android and has a web browser, there is a good chance pocketvibe will feel at home on it. The launcher is light on memory and light on storage, so it leaves plenty of room for your existing game collection.</p>
+  </section>
+
+  <section style="margin-top:44px;">
+    <h2 style="font-size:clamp(1.35rem, 4vw, 1.6rem); margin:0 0 16px 0; font-weight:750; color:#14172a; letter-spacing:-0.3px;">🧰 What Is Inside</h2>
+    <ul style="margin:0; padding-left:22px;">
+      <li style="margin-bottom:12px;"><strong>The launcher.</strong> A clean home screen that gathers your installed games in one place and starts them quickly.</li>
+      <li style="margin-bottom:12px;"><strong>The game store.</strong> A browsable catalogue of three.js games chosen for handheld play, with one-press installs.</li>
+      <li style="margin-bottom:12px;"><strong>The starter kit.</strong> A working project template with simple explanations, ready to be shaped by you and your AI assistant.</li>
+      <li style="margin-bottom:0;"><strong>Helper notes and examples.</strong> Short, plain-language guidance on adding games, adjusting settings, and getting the most out of the setup.</li>
+    </ul>
+  </section>
+
+  <section style="margin-top:44px; padding:28px clamp(18px, 5vw, 28px); background-color:#ffffff; border-radius:18px; box-shadow:0 6px 22px rgba(31, 35, 51, 0.07); border:1px solid #e4e7f1;">
+    <h2 style="font-size:clamp(1.35rem, 4vw, 1.6rem); margin:0 0 16px 0; font-weight:750; color:#14172a; letter-spacing:-0.3px;">❓ Troubleshooting</h2>
+    <p style="margin:0 0 14px 0;"><strong>The launcher does not appear after restarting.</strong> Double-check that the pocketvibe files ended up in the correct folder on your device, and that nothing was renamed during the copy. Then restart the device once more.</p>
+    <p style="margin:0 0 14px 0;"><strong>My computer cannot see the handheld.</strong> Try a different USB cable and a different USB port on your computer. Avoid USB hubs where you can. Charge-only cables are the single most common cause of this problem.</p>
+    <p style="margin:0 0 14px 0;"><strong>A game will not start.</strong> Make sure the game finished installing before you launched it. If the install was interrupted, remove the game and install it again from the store.</p>
+    <p style="margin:0 0 14px 0;"><strong>The buttons feel in the wrong place.</strong> Open the game settings and look for a control or input option. Many titles let you swap the action buttons so they match the labels printed on your handheld.</p>
+    <p style="margin:0;"><strong>Everything feels slow.</strong> Close any apps you are not using and restart the device. Web-based games run best when they are the only thing in focus.</p>
+  </section>
+
+  <section style="margin-top:44px; padding:28px clamp(18px, 5vw, 28px); background-color:#ffffff; border-radius:18px; box-shadow:0 6px 22px rgba(31, 35, 51, 0.07); border:1px solid #e4e7f1;">
+    <h2 style="font-size:clamp(1.35rem, 4vw, 1.6rem); margin:0 0 16px 0; font-weight:750; color:#14172a; letter-spacing:-0.3px;">💬 Getting Help and Sharing Games</h2>
+    <p style="margin:0 0 16px 0;">Because pocketvibe is an open source project, everything happens in the open. The download page also lists every version that has been released, plus notes written in plain language that describe what changed and what was fixed. If you think you have found a problem, that page is the place to check whether a newer version already solves it.</p>
+    <p style="margin:0 0 16px 0;">If you make a game you are proud of, sharing it is genuinely useful. Other people get something new to play on their handheld, and you get feedback that makes your next project stronger. The same goes for small improvements to the launcher or the store: they are welcome from anyone, no matter how new you are to making things.</p>
+    <p style="margin:0 0 18px 0;">Keep the download page bookmarked. New games, fixes and starter kit improvements all arrive there first.</p>
+    <p style="margin:0; text-align:center;">
+      <a href="https://github.com/bytheroberto/pocketvibe/releases" style="display:inline-block; padding:15px clamp(22px, 6vw, 36px); font-size:1.02rem; font-weight:700; color:#ffffff; text-decoration:none; background:linear-gradient(90deg, #7c3aed 0%, #ec4899 100%); border-radius:12px; box-shadow:0 6px 18px rgba(124, 58, 237, 0.3);">⬇️ Visit the pocketvibe download page</a>
+    </p>
+  </section>
+
+</div>
+
 </body>
 </html>
