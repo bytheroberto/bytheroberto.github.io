@@ -3,17 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Photo Saver para Android TV · quirogaj</title>
-  <meta name="description" content="Salvapantallas para mostrar tus fotografías personales en un televisor con Android TV.">
+  <title>Photo Saver TV para Android TV · quirogaj</title>
+  <meta name="description" content="Usa tus fotos como protector de pantalla en Android TV. Transfiérelas por Wi-Fi, organízalas con el mando y descubre las funciones Premium.">
   <link rel="canonical" href="https://quirogajqa.github.io/photo-saver/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="quirogaj">
-  <meta property="og:title" content="Photo Saver para Android TV · quirogaj">
-  <meta property="og:description" content="Salvapantallas para mostrar tus fotografías personales en un televisor con Android TV.">
+  <meta property="og:title" content="Photo Saver TV para Android TV · quirogaj">
+  <meta property="og:description" content="Usa tus fotos como protector de pantalla en Android TV. Transfiérelas por Wi-Fi, organízalas con el mando y descubre las funciones Premium.">
   <meta property="og:url" content="https://quirogajqa.github.io/photo-saver/">
+  <meta property="og:image" content="https://quirogajqa.github.io/assets/images/photo-saver-inicio.png">
+  <meta property="og:image:alt" content="Menú principal de Photo Saver TV">
+  <meta property="og:image:width" content="1920">
+  <meta property="og:image:height" content="1080">
   <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg">
   <link rel="stylesheet" href="../css/styles.css">
-  <script defer src="../js/main.js"></script>
+  <style>
+    .photo-saver a, .photo-saver code { overflow-wrap: anywhere; }
+    .photo-saver > section { margin-top: 2.5rem; }
+    .photo-saver .lead { max-width: 58ch; font-size: 1.15rem; }
+    .photo-saver .card-body > :last-child { margin-bottom: 0; }
+    .photo-saver figcaption { background: var(--panel); }
+  </style>
 </head>
 <body>
   <a class="skip" href="#contenido">Saltar al contenido</a>
@@ -30,29 +40,66 @@
     </div>
   </header>
   <main id="contenido" tabindex="-1">
-    <article class="wrap section detail">
-      <p><a href="../#aplicaciones">Volver a aplicaciones</a></p>
-      <div class="card-title"><img class="app-icon" src="../assets/icons/photo-saver.svg" alt="" width="48" height="48"><p class="tag">Android TV · Icono provisional</p></div>
-      <h1>Photo Saver</h1>
-      <p>Salvapantallas para mostrar tus fotografías personales en un televisor con Android TV.</p>
+    <article class="wrap section photo-saver">
+      <div class="card-title">
+        <img class="app-icon" src="../assets/icons/photo-saver-app.png" width="48" height="48" alt="">
+        <p class="tag">Android TV · quirogaj</p>
+      </div>
+      <h1>Photo Saver TV</h1>
+      <p class="lead">Convierte tu televisor en un marco de fotos. Envía tus imágenes desde otro dispositivo de tu red local y elige Photo Saver TV como protector de pantalla.</p>
+
       <section>
-        <h2>Características principales</h2>
-      <ul>
-        <li>Salvapantallas para Android TV.</li>
-        <li>Visualización de fotografías personales en el televisor.</li>
-      </ul>
+        <h2>Características</h2>
+        <div class="grid">
+          <div class="card"><div class="card-body">
+            <h3>Subida por Wi-Fi</h3>
+            <p>Abre en el navegador el enlace que muestra la TV, escaneando el QR o escribiendo la dirección. Usa el PIN de la pantalla para enviar fotos por tu red local.</p>
+          </div></div>
+          <div class="card"><div class="card-body">
+            <h3>Biblioteca en la TV</h3>
+            <p>Consulta las fotos de la carpeta <code>Pictures/Screensaver</code> con el mando. Puedes seleccionar y borrar varias a la vez con confirmación.</p>
+          </div></div>
+          <div class="card"><div class="card-body">
+            <h3>Gratis</h3>
+            <p>Guarda hasta 11 fotos mediante la app y reproduce hasta 11 con un intervalo de 12 segundos. La biblioteca muestra todas las fotos accesibles de la carpeta.</p>
+          </div></div>
+          <div class="card"><div class="card-body">
+            <h3>Premium</h3>
+            <p>Una compra única desbloquea el intervalo personalizable, la edición de fechas de captura compatibles, la subida en segundo plano y el uso de fotos sin tope de cantidad de la app, sujeto al espacio disponible.</p>
+          </div></div>
+        </div>
       </section>
+
       <section>
         <h2>Galería</h2>
-        <figure>
-          <img src="../assets/images/photo-saver.svg" width="720" height="360" loading="lazy" decoding="async" alt="Un paisaje de montaña ilustrado dentro de un televisor.">
-          <figcaption>Ilustración provisional · Capturas oficiales pendientes</figcaption>
-        </figure>
+        <div class="grid">
+          <figure class="card">
+            <img src="../assets/images/photo-saver-inicio.png" width="1920" height="1080" loading="lazy" decoding="async" alt="Menú de Photo Saver TV con acceso a la biblioteca, la subida de fotos y el protector de pantalla.">
+            <figcaption>Menú principal en Android TV</figcaption>
+          </figure>
+          <figure class="card">
+            <img src="../assets/images/photo-saver-premium.png" width="1920" height="1080" loading="lazy" decoding="async" alt="Pantalla Premium con las funciones que se desbloquean mediante la compra única.">
+            <figcaption>Funciones de Premium en la app</figcaption>
+          </figure>
+        </div>
       </section>
+
       <section>
         <h2>Disponibilidad</h2>
-        <p>Ficha de Google Play pendiente de confirmar.</p>
-        <a href="privacidad/">Política de privacidad de Photo Saver (borrador)</a>
+        <div class="notice">
+          <p>Para dispositivos compatibles con Android TV o Google TV desde Android 7.0. La activación del protector de pantalla depende de los ajustes del dispositivo.</p>
+          <p>La edición de Google Play está disponible para las cuentas autorizadas en la prueba cerrada. El lanzamiento público está pendiente de confirmación.</p>
+          <p><a class="button" href="https://play.google.com/apps/testing/com.quirogaj.photosavertv">Acceder a la prueba cerrada</a> con la cuenta autorizada.</p>
+          <p>Si ya aceptaste la invitación, <a href="https://play.google.com/store/apps/details?id=com.quirogaj.photosavertv">abre la ficha en Google Play</a> con esa misma cuenta.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Información legal</h2>
+        <ul>
+          <li><a href="./privacidad/">Política de privacidad</a></li>
+          <li><a href="./terminos/">Términos de uso</a></li>
+        </ul>
       </section>
     </article>
   </main>
@@ -60,13 +107,14 @@
     <div class="wrap">
       <p class="brand">quirogaj<span aria-hidden="true">.</span></p>
       <ul class="footer-links">
-        <li><a href="../photo-saver/">Photo Saver</a></li>
+        <li><a href="../photo-saver/">Photo Saver TV</a></li>
         <li><a href="../photo-saver/privacidad/">Privacidad de Photo Saver</a></li>
+        <li><a href="../photo-saver/terminos/">Términos de Photo Saver TV</a></li>
         <li><a href="../sweet-dreams-tv/">Sweet Dreams TV</a></li>
         <li><a href="../sweet-dreams-tv/privacidad/">Privacidad de Sweet Dreams TV</a></li>
         <li><a href="../#contacto">Contacto</a></li>
       </ul>
-      <p>© <span data-year>2026</span> quirogaj</p>
+      <p>© 2026 quirogaj</p>
     </div>
   </footer>
 </body>

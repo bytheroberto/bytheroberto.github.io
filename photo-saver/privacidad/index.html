@@ -3,18 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacidad de Photo Saver (borrador) · quirogaj</title>
-  <meta name="description" content="Estructura preliminar de la política de privacidad de Photo Saver para Android TV.">
-  <meta name="robots" content="noindex">
+  <title>Política de privacidad de Photo Saver TV · quirogaj</title>
+  <meta name="description" content="Cómo Photo Saver TV trata las fotos y sus metadatos, las transferencias por Wi-Fi, los datos de compra y los mensajes de soporte.">
   <link rel="canonical" href="https://quirogajqa.github.io/photo-saver/privacidad/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="quirogaj">
-  <meta property="og:title" content="Privacidad de Photo Saver (borrador) · quirogaj">
-  <meta property="og:description" content="Estructura preliminar de la política de privacidad de Photo Saver para Android TV.">
+  <meta property="og:title" content="Política de privacidad de Photo Saver TV · quirogaj">
+  <meta property="og:description" content="Cómo Photo Saver TV trata las fotos y sus metadatos, las transferencias por Wi-Fi, los datos de compra y los mensajes de soporte.">
   <meta property="og:url" content="https://quirogajqa.github.io/photo-saver/privacidad/">
   <link rel="icon" type="image/svg+xml" href="../../assets/icons/favicon.svg">
   <link rel="stylesheet" href="../../css/styles.css">
-  <script defer src="../../js/main.js"></script>
+  <style>
+    .photo-saver a, .photo-saver code { overflow-wrap: anywhere; }
+    .photo-saver > section { margin-top: 2.5rem; }
+    .photo-saver .lead { max-width: 58ch; font-size: 1.15rem; }
+    .photo-saver .card-body > :last-child { margin-bottom: 0; }
+    .photo-saver figcaption { background: var(--panel); }
+  </style>
 </head>
 <body>
   <a class="skip" href="#contenido">Saltar al contenido</a>
@@ -31,30 +36,75 @@
     </div>
   </header>
   <main id="contenido" tabindex="-1">
-    <article class="wrap section prose">
-      <p><a href="../">Volver a Photo Saver</a></p>
-      <p class="eyebrow">Borrador</p>
-      <h1>Política de privacidad de Photo Saver</h1>
-      <p>Desarrollador · quirogaj<br>Última actualización del borrador · <time datetime="2026-11-09">9 de noviembre de 2026</time></p>
-      <div class="notice"><p>La información sobre el funcionamiento de la aplicación está pendiente de verificación. Publica la política definitiva antes de registrar esta URL en Google Play Console.</p></div>
-      <section><h2>Recopilación y tratamiento de datos</h2><p>Pendiente de confirmar qué datos trata la aplicación, con qué finalidad, dónde se procesan o almacenan, durante cuánto tiempo y cómo se eliminan.</p></section>
-      <section><h2>Permisos y finalidad</h2><p>Pendiente de revisar el manifiesto y los permisos que la aplicación solicita en el dispositivo.</p></section>
-      <section><h2>Servicios de terceros</h2><p>Pendiente de identificar SDK, servicios externos y posibles transferencias de datos.</p></section>
-      <section><h2>Publicidad y analítica</h2><p>Pendiente de verificar si se integran herramientas de publicidad, analítica o diagnóstico.</p></section>
-      <section><h2>Consultas de privacidad</h2><p>Dirección de contacto pendiente de confirmar.</p></section>
+    <article class="wrap section photo-saver prose">
+      <p><a href="../">Volver a Photo Saver TV</a></p>
+      <h1>Política de privacidad de Photo Saver TV</h1>
+      <p>Desarrollador · quirogaj<br>Última actualización · <time datetime="2026-11-09">9 de noviembre de 2026</time></p>
+
+      <section id="responsable">
+        <h2>Responsable y contacto</h2>
+        <p>quirogaj es el nombre público del desarrollador responsable de Photo Saver TV, aplicación para Android TV en su edición de Google Play con el identificador <code>com.quirogaj.photosavertv</code>. Esta política se refiere a esa edición de la aplicación.</p>
+        <p>Para consultas de soporte o privacidad, puedes escribir a <a href="mailto:quirogaj.soporte@gmail.com">quirogaj.soporte@gmail.com</a>. La aplicación no requiere crear una cuenta propia con el desarrollador.</p>
+      </section>
+
+      <section id="fotos">
+        <h2>Fotos y metadatos</h2>
+        <p>Photo Saver TV solicita acceso a fotos del dispositivo para consultar y administrar las imágenes de <code>Pictures/Screensaver</code> y reproducirlas como protector de pantalla. Puede leer nombres de archivo, orientación y fecha de captura. La edición Premium permite modificar la fecha de captura de archivos compatibles cuando lo solicitas y Android lo autoriza.</p>
+        <p>Las fotos se guardan en el almacenamiento compartido de la TV. No se suben a un servidor propio del desarrollador ni se ofrece almacenamiento de fotos en la nube dentro de la app. Otras aplicaciones con los permisos adecuados pueden acceder a esos archivos. Desinstalar la app no equivale a borrar la carpeta de fotos.</p>
+      </section>
+
+      <section id="red-local">
+        <h2>Subida por Wi-Fi y red local</h2>
+        <p>La app puede recibir fotos desde un navegador mediante la dirección local y el PIN que muestra la TV. Para ello obtiene una dirección IP local y ejecuta un servidor que valida el PIN y recibe los archivos. Premium permite mantenerlo en segundo plano, con una notificación.</p>
+        <p>La transferencia local utiliza HTTP, sin cifrado TLS. Usa una red de confianza, no compartas el enlace o PIN con personas no autorizadas y no expongas el puerto del servidor a Internet. El archivo recibido puede conservar los metadatos que ya contenga. La app no ofrece acceso remoto a través de un servidor del desarrollador.</p>
+      </section>
+
+      <section id="compras">
+        <h2>Preferencias y compras con Google Play</h2>
+        <p>Las preferencias de funcionamiento se guardan localmente. Google Play procesa la compra única de Premium. La app consulta el producto y el estado de la compra, verifica el comprobante firmado y conserva una copia en su almacenamiento privado para recuperar un acceso previamente verificado sin conexión. Ese comprobante se excluye de la copia de seguridad automática.</p>
+        <p>La app no guarda números de tarjetas ni contraseñas de Google. Google puede tratar información de cuenta, pago y dispositivo para prestar sus servicios, de acuerdo con sus propias condiciones y política de privacidad: <a href="https://policies.google.com/privacy" rel="noreferrer">política de privacidad de Google</a>.</p>
+        <p>Con conexión y la misma cuenta de Google Play, la app puede consultar de nuevo una compra válida después de reinstalar. Borrar los datos locales o desinstalar no cancela ni reembolsa una compra. Las revocaciones se detectan cuando la app vuelve a consultar correctamente Google Play.</p>
+      </section>
+
+      <section id="diagnostico">
+        <h2>Publicidad y diagnóstico</h2>
+        <p>La versión cubierta por esta política no incorpora publicidad ni SDK de analítica o envío de informes de fallos a un servidor propio. La app puede generar registros técnicos locales ante errores. Android y Google Play pueden ofrecer diagnóstico según sus ajustes y condiciones.</p>
+        <p>Si incorporamos servicios que cambien el tratamiento de datos, actualizaremos esta política y las declaraciones correspondientes de Google Play.</p>
+      </section>
+
+      <section id="eliminacion">
+        <h2>Conservación y eliminación</h2>
+        <p>Puedes borrar fotos desde la biblioteca de la app, con confirmación y los permisos de Android, o mediante herramientas de archivos del dispositivo. Las fotos permanecen hasta que se eliminen; perder Premium no las borra.</p>
+        <p>Las preferencias y el comprobante local se conservan hasta que la app los actualice o elimine, borres sus datos o la desinstales. Android puede respaldar o restaurar ciertas preferencias según su configuración; la app no utiliza ese respaldo para guardar el comprobante de compra.</p>
+        <p>Puedes revocar permisos en los ajustes de Android. Algunas funciones dejarán de estar disponibles sin los permisos necesarios. Para gestionar los datos que Google trata por su cuenta, utiliza los controles y canales de Google.</p>
+      </section>
+
+      <section id="soporte">
+        <h2>Mensajes de soporte</h2>
+        <p>Si escribes al correo de soporte, se recibirán tu dirección de correo, el contenido y los archivos que decidas enviar. Se utilizarán para atender y dar seguimiento a tu consulta. Se conservarán durante el tiempo necesario para esa gestión y para cumplir obligaciones legales aplicables. Puedes solicitar su eliminación mediante ese mismo correo; se atenderá teniendo en cuenta dichas obligaciones.</p>
+        <p>Gmail procesa los mensajes de soporte conforme a la <a href="https://policies.google.com/privacy">política de privacidad de Google</a>. No envíes contraseñas ni datos bancarios; evita adjuntar fotos personales si no son necesarias para explicar el problema.</p>
+      </section>
+
+      <section id="cambios">
+        <h2>Cambios de esta política</h2>
+        <p>La versión original entró en vigor el 30 de octubre de 2026. Las actualizaciones se publicarán en esta misma página indicando su fecha. Para consultas sobre esta política, contacta a quirogaj en <a href="mailto:quirogaj.soporte@gmail.com">quirogaj.soporte@gmail.com</a>.</p>
+      </section>
+
+      <p><a href="../terminos/">Términos de uso</a></p>
     </article>
   </main>
   <footer class="site-footer">
     <div class="wrap">
       <p class="brand">quirogaj<span aria-hidden="true">.</span></p>
       <ul class="footer-links">
-        <li><a href="../../photo-saver/">Photo Saver</a></li>
+        <li><a href="../../photo-saver/">Photo Saver TV</a></li>
         <li><a href="../../photo-saver/privacidad/">Privacidad de Photo Saver</a></li>
+        <li><a href="../../photo-saver/terminos/">Términos de Photo Saver TV</a></li>
         <li><a href="../../sweet-dreams-tv/">Sweet Dreams TV</a></li>
         <li><a href="../../sweet-dreams-tv/privacidad/">Privacidad de Sweet Dreams TV</a></li>
         <li><a href="../../#contacto">Contacto</a></li>
       </ul>
-      <p>© <span data-year>2026</span> quirogaj</p>
+      <p>© 2026 quirogaj</p>
     </div>
   </footer>
 </body>
