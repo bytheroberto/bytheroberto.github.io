@@ -1,4 +1,4 @@
-# quirogaj · Aplicaciones para Android y Android TV
+# QuirogaJ · Aplicaciones para Android y Android TV
 
 Sitio estático en español. Las páginas usan HTML, una hoja de estilos compartida y un script para el año del pie. GitHub Pages sirve los archivos directamente desde la raíz.
 
@@ -41,7 +41,7 @@ Los borradores tienen rutas estables, etiqueta `noindex` y quedan fuera del site
 
    ```sh
    git add .
-   git commit -m "Crear sitio de quirogaj"
+   git commit -m "Crear sitio de QuirogaJ"
    git branch -M main
    git remote add origin https://github.com/quirogajqa/quirogajqa.github.io.git
    git push -u origin main
