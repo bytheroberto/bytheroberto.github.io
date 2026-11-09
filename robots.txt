@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://quirogajqa.github.io/sitemap.xml

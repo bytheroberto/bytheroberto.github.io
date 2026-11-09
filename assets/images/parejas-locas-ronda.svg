@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360">
+  <rect width="720" height="360" fill="#0b1221"/>
+  <g fill="#121e33" stroke-width="2">
+    <rect x="90" y="68" width="246" height="96" rx="16" stroke="#96d5ff"/>
+    <rect x="384" y="196" width="246" height="96" rx="16" stroke="#96d5ff"/>
+    <rect x="90" y="196" width="246" height="96" rx="16" stroke="#2c405a"/>
+    <rect x="384" y="68" width="246" height="96" rx="16" stroke="#2c405a"/>
+  </g>
+  <g text-anchor="middle" font-family="system-ui, sans-serif" font-size="32" font-weight="700">
+    <text x="213" y="128" fill="#96d5ff">gato</text>
+    <text x="507" y="256" fill="#96d5ff">cat</text>
+    <text x="213" y="256" fill="#f2f6ff">perro</text>
+    <text x="507" y="128" fill="#f2f6ff">dog</text>
+  </g>
+</svg>
